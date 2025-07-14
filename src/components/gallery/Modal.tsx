@@ -2,6 +2,7 @@ import { Dialog } from "@headlessui/react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
+// @ts-ignore - react-use-keypress doesn't have types
 import useKeypress from "react-use-keypress";
 import type { ImageProps } from "../../lib/gallery-types";
 import SharedModal from "./SharedModal";
@@ -13,7 +14,7 @@ export default function Modal({
   images: ImageProps[];
   onClose?: () => void;
 }) {
-  let overlayRef = useRef();
+  let overlayRef = useRef<HTMLDivElement>();
   const router = useRouter();
 
   // For App Router, we'll need to get the photoId from URL or state
@@ -55,19 +56,18 @@ export default function Modal({
 
   return (
     <Dialog
-      static
       open={true}
       onClose={handleClose}
       initialFocus={overlayRef}
       className="fixed inset-0 z-10 flex items-center justify-center"
     >
-      <Dialog.Overlay
+      <motion.div
         ref={overlayRef}
-        as={motion.div}
         key="backdrop"
         className="fixed inset-0 z-30 bg-black/70 backdrop-blur-2xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        onClick={handleClose}
       />
       <SharedModal
         index={curIndex}

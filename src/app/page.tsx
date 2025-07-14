@@ -47,9 +47,11 @@ export default function HomePage() {
               <Button size="lg" className="px-8 py-4 text-lg">
                 Start Free Trial
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-4 text-lg" asChild>
-                <a href="/gallery">View Gallery Demo</a>
-              </Button>
+              <a href="/gallery">
+                <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
+                  View Gallery Demo
+                </Button>
+              </a>
             </div>
           </div>
         </div>

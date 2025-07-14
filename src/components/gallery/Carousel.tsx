@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+// @ts-ignore - react-use-keypress doesn't have types
 import useKeypress from "react-use-keypress";
 import type { ImageProps } from "../../lib/gallery-types";
 import { useLastViewedPhoto } from "../../lib/useLastViewedPhoto";
