@@ -2,6 +2,8 @@
 
 A modern, performant photo sharing and collaboration platform built with Next.js, Supabase, and Cloudflare R2.
 
+Professional photo sharing platform for photographers.
+
 ## Features
 
 ### Current (MVP)
@@ -23,7 +25,7 @@ A modern, performant photo sharing and collaboration platform built with Next.js
 
 ## Tech Stack
 
-- **Frontend**: Next.js 14+, TypeScript, Tailwind CSS
+- **Frontend**: Next.js 15+, TypeScript, Tailwind CSS
 - **Backend**: Supabase (Auth, Database, Realtime)
 - **Storage**: Cloudflare R2
 - **Deployment**: Vercel
@@ -41,8 +43,8 @@ A modern, performant photo sharing and collaboration platform built with Next.js
 
 1. Clone the repository
 ```bash
-git clone [repository-url]
-cd frameport_app
+git clone https://github.com/Pitthammerit/frameport-app.git
+cd frameport-app
 ```
 
 2. Install dependencies
@@ -91,7 +93,7 @@ See [FOLDER_STRUCTURE.md](./FOLDER_STRUCTURE.md) for detailed organization.
 
 ## Documentation
 
-- [Claude Integration Guide](./claude.md) - AI assistant context
+- [Claude Integration Guide](./CLAUDE.md) - AI assistant context
 - [TODO List](./todo.md) - Development roadmap
 - [Project History](./project_history.md) - Decision log
 
@@ -112,8 +114,8 @@ See [FOLDER_STRUCTURE.md](./FOLDER_STRUCTURE.md) for detailed organization.
 
 ## License
 
-[Your License Here]
+MIT License
 
 ## Contact
 
-[Your Contact Information]
+For questions or support, please open an issue on GitHub.
